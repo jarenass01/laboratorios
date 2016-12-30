@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - @localhost" uuid="6080dcaf-8678-4946-81e8-e4265ea3197c">
+    <database-info product="MySQL" version="5.5.32" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="encuestashusvp"/>
+      <table id="2" parent="1" name="datos_encuesta"/>
+      <table id="3" parent="1" name="usuarios"/>
+      <table id="4" parent="1" name="verificacionquirurgica"/>
+      <column id="5" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="6" parent="2" name="usuario">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="7" parent="2" name="hora_inicio">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="8" parent="2" name="hora_fin">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="9" parent="2" name="paciente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="2" name="cc_paciente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="11" parent="2" name="cirugia_propuesta">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="12" parent="2" name="fecha">
+        <data-type>date</data-type>
+      </column>
+      <column id="13" parent="2" name="nombre_encuesta">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="14" parent="2" name="id_encuesta">
+        <data-type>int(50)</data-type>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="17" parent="3" name="nombres">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="18" parent="3" name="apellidos">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="19" parent="3" name="correo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="usuario">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="21" parent="3" name="clave">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="22" parent="3" name="cargo">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="23" parent="3" name="rol">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="24" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(45)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="26" parent="4" name="pcIdentificacion">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="27" parent="4" name="pcSitioQuirurgico">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="28" parent="4" name="pcProcedimiento">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="29" parent="4" name="pcConsentimientoInformado">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="30" parent="4" name="localizacionQuirurgicaMarcada">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="31" parent="4" name="equiposParaLaSeguridad">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="32" parent="4" name="monitoreoEnElPaciente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="33" parent="4" name="alergiasConocidas">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="34" parent="4" name="dificultadViaAerea">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="35" parent="4" name="riesgoPerdidaSangre">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="36" parent="4" name="clasificacionASA">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="37" parent="4" name="valorClasASA">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="38" parent="4" name="revisarEquipoHumano">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="39" parent="4" name="revisionSucesosCriticos">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="40" parent="4" name="administracionProfiAntibiotica">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="41" parent="4" name="tiempoProfilaxis">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="42" parent="4" name="visualizacionImagenesEsen">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="43" parent="4" name="nombreProcedRealizado">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="44" parent="4" name="conteoInstrumentalCorrecto">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="45" parent="4" name="observaciones">
+        <data-type>text</data-type>
+      </column>
+      <column id="46" parent="4" name="identificacionMuestasBiologicas">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="47" parent="4" name="asistencialRevisaPreoRec">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+        <default-expression>&apos;No&apos;</default-expression>
+      </column>
+      <column id="48" parent="4" name="tipoHerida">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="49" parent="4" name="tiempoIntervencion">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="50" parent="4" name="id_datos_encuesta">
+        <data-type>int(45)</data-type>
+      </column>
+      <key id="51" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

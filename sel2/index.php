@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="select2.css">
         <script>
             $(function() {
+                
+                $("select[name=seleccion]").val("<?= 3 ?>");
+                
                 $(".js-example-placeholder-single").select2({
                     placeholder: "Select a state",
                     allowClear: true
@@ -14,7 +17,7 @@
         </script>
     </head>
     <body>
-        <select style="width: 100%;" multiple="multiple" class="form-control js-example-placeholder-single">
+        <select style="width: 100%;" name="seleccion" class="js-example-placeholder-single">
             <option></option>
             <option value="1">Uno</option>
             <option value="2">Dos</option>
